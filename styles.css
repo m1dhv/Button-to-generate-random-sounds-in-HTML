@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&display=swap');
+
+
+body{
+    background-image: url('Assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.main-heading{
+    display: flex;
+    position: absolute;
+    padding-bottom: 650px;
+    color: white;
+    font-family: "Chokokutai", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    
+}
+
+.main-container{
+    
+    scale: 1.4;
+    width: 300px; 
+    height: 400px; 
+    background-image: url('Assets/containerbg.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    
+    display: flex;
+    border-radius: 48px;
+    width: auto;
+    padding: 1em 2em;
+    padding-left: 23%;
+}
+
+.eyes {
+position: relative;
+width: 100px;
+height: 100px;
+display: block;
+background-color: #fff;
+margin: 0 -10px;
+border-radius: 50%;
+border: 1px solid orange;
+overflow: auto;
+}
+.eyes:first-child{
+  z-index:9
+ }
+.container .eyes::before {
+content: "";
+top: 50%;
+left: 35px;
+transform: translate(-50%, -50%);
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: #000;
+position: absolute;
+box-sizing: border-box;
+}
+
+.button-class{
+    padding-left: 40%;
+    padding-top: 50%;
+    
+}
+
+.button-class button{
+    width: 60px; /* Set equal width and height */
+    height: 60px;
+    border-radius: 50%; /* Makes it round */
+    background-color: #ffffff; /* Button color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-class button:hover{
+    background-color: red;
+    color: #ffffff;box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+
+}
